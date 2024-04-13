@@ -85,24 +85,7 @@ public class Rezeptverwaltung {
 
     public void zeigeRezeptAn (String rezeptname, String rezepttyp){
 
-        for (int i = 0; i < rezepte.length; i++){
 
-            if (rezepte[i] != null){
-
-                if (rezepte[i].getName().equals(rezeptname) && rezepte[i].getTyp().equals(rezepttyp)){
-
-                    System.out.println("Anzeige von Rezept:");
-                    System.out.println("Name: " + rezepte[i].getName());
-                    System.out.println("Rezeptart: " + rezepte[i].getTyp());
-                    System.out.print("Zutaten: ");
-                    for (int j = 0; j < rezepte[i].getZutaten().length; j++){
-
-                        System.out.print(rezepte[i].getZutaten()[j].getName() + " ");
-
-                    }
-                }
-            }
-        }
     }
 
     public int ermittleAnzahlRezepte (String rezepttyp){

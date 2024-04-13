@@ -40,23 +40,4 @@ public class Zutatenverwaltung {
         }
     }
 
-    public Zutat sucheZutat (){
-
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Bitte Zutatenname eingeben");
-        String eingabe = scanner.nextLine();
-
-        for (int i = 0; i< zutaten.length; i++){
-
-            if (zutaten[i] != null && zutaten[i].getName().equals(eingabe)){
-                return zutaten[i];
-            } else {
-                System.out.println("Zutat ist nicht vorhanden");
-                return null;
-            }
-        }
-
-        return null;
-    }
-
 }
